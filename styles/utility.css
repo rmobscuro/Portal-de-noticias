@@ -1,0 +1,13 @@
+/* utility class - classes utilitárias*/
+.grid {
+  display: grid;
+}
+.grid-col {
+  grid-auto-flow: column;
+}
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.gap-16 {
+  gap: 16px;
+}
