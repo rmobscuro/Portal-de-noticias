@@ -52,7 +52,9 @@ section header {
 }
 
 #weekly {
+
   grid-area: weekly;
+
   &>div {
     grid-template-columns: repeat(4, 292px);
   }
@@ -97,9 +99,11 @@ aside {
 
 #more {
   margin-top: 32px;
+
   h3 {
     margin-top: 8px;
   }
+
   img {
     width: 72px;
     aspect-ratio: 1/1;
