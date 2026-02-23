@@ -51,6 +51,9 @@ section header {
       h2 {
         margin-top: .5rem;
       }
+      h3 {
+        margin-top: .5rem;
+      }
     }
   }
 }
@@ -131,6 +134,9 @@ aside {
     }
     img[src="assets/images/Image 01.png"] {
       min-height: 26rem;
+    }
+    .card figcaption {
+      padding: 1rem;
     }
   }
 
