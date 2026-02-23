@@ -1,17 +1,17 @@
 section header {
   border-top: 1px solid var(--stroke-color);
-  padding-block: 12px 24px;
+  padding-block: .75rem 1.5rem;
   font: var(--txt-span);
 
   a {
     justify-self: end;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
 
     span {
       background-image: url(../assets/icons/ArrowRight.svg);
-      height: 16px;
-      width: 16px;
+      height: 1rem;
+      width: 1rem;
     }
 
     &:hover span {
@@ -21,13 +21,16 @@ section header {
 }
 
 #featured {
-  grid-area: featured;
+  @media (min-width: 80em) {
+    grid-area: featured;
+  }
+
   img {
     height: 100%;
     object-fit: cover;
   }
   .card {
-    border-radius: 4px;
+    border-radius: .25rem;
     overflow: hidden;
     position: relative;
     &::before {
@@ -40,27 +43,31 @@ section header {
     figcaption {
       position: absolute;
       bottom: 0;
-      padding: 24px;
+      padding: 1.5rem;
       &:has(.text-lg) {
-        padding: 12px;
+        padding: .75rem;
       }
       h2 {
-        margin-top: 8px;
+        margin-top: .5rem;
       }
     }
   }
 }
 
 #weekly {
-
-  grid-area: weekly;
+  @media (min-width: 80em) {
+    grid-area: weekly;
+  }
 
   &>div {
-    grid-template-columns: repeat(4, 292px);
+    @media (min-width: 80em) {
+      grid-template-columns: repeat(4, 18.25rem);
+
+    }
   }
 
   img {
-    height: 160px;
+    height: 10rem;
   }
 
   figure {
@@ -68,45 +75,67 @@ section header {
 
     .content-tag {
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: .5rem;
+      left: .5rem;
     }
 
     p {
-      margin-top: 8px;
+      margin-top: .5rem;
       font-weight: 800;
     }
   }
 }
 
 #ai {
-  grid-area: ai;
+  @media (min-width: 80em) {
+    grid-area: ai;
+  }
 
   img {
-    width: 176px;
+    width: 11rem;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
   
   h3 {
-    margin-block: 8px 4px;
+    margin-block: .5rem .25rem;
   }
 }
 
 aside {
-  grid-area: aside;
+  @media (min-width: 80em) {
+    grid-area: aside;
+  }
 }
 
 #more {
-  margin-top: 32px;
+  margin-top: 2rem;
 
   h3 {
-    margin-top: 8px;
+    margin-top: .5rem;
   }
 
   img {
-    width: 72px;
+    width: 4.5rem;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+}
+
+@media (width < 80em) {
+  .card {
+    border-radius: .25rem;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+    figcaption {
+      
+    }
   }
 }

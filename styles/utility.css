@@ -3,16 +3,22 @@
   display: grid;
 }
 .grid-col {
-  grid-auto-flow: column;
+  @media (min-width: 80em) {
+
+    grid-auto-flow: column;
+  }
 }
 .grid-col-2 {
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: 80em) {
+
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .gap-16 {
-  gap: 16px;
+  gap: 1rem;
 }
 .gap-32 {
-  gap: 32px;
+  gap: 2rem;
 }
 .text-2xl {
   font: var(--h1);
@@ -25,4 +31,9 @@
 }
 .text-sm {
   font: var(--txt-sm);
+}
+/* @media (min-width: 76.5rem) */
+
+@media (width < 80em) {
+  
 }
