@@ -1,10 +1,8 @@
-/* utility class - classes utilitárias*/
 .grid {
   display: grid;
 }
 .grid-col {
   @media (min-width: 80em) {
-
     grid-auto-flow: column;
   }
 }
@@ -13,7 +11,6 @@
 }
 .grid-col-2 {
   @media (min-width: 80em) {
-
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -35,7 +32,7 @@
 .text-sm {
   font: var(--txt-sm);
 }
-/* @media (min-width: 76.5rem) */
+/* @media (min-width: 48rem) (width<80em)*/
 
 @media (width < 80em) {
   
