@@ -11,4 +11,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:<br>
 HTML<br>
 CSS<br><br>
 Projeto<br>
-Nesse projeto iremos desenvolver um portal de notícias para praticar o nosso conhecimento com o Grid!
+Nesse projeto iremos desenvolver um portal de notícias para praticar o nosso conhecimento com o Grid!<br>
+Colocar responsividade posteriormente.
